@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+    <link rel="stylesheet" href="output.css" />
+    <title>MERN Module 5- Assignment</title>
+  </head>
+
+  
+  <body class="px-5 py-5 flex flex-col items-center font-[Poppins] lg:px-10">
+    <!-- Header Part Starts -->
+    <header
+      class="w-full max-w-350 text-base font-medium flex justify-between items-center lg:text-[18px]"
+    >
+      <img class="w-40" src="./assets/images/logo.png" alt="Brand Logo" />
+      <nav class="hidden md:flex items-center">
+        <ul class="flex justify-center items-center gap-7">
+          <li><a class="pb-1.5 border-b-0 border-main-theme-color ease duration-300 transition hover:text-main-theme-color hover:border-b-3 hover:border-main-theme-color" href="./index.html">Home</a></li>
+          <li><a class="pb-1.5 border-b-0 border-main-theme-color ease duration-300 transition hover:text-main-theme-color hover:border-b-3 hover:border-main-theme-color" href="#about">About Us</a></li>
+          <li><a class="pb-1.5 border-b-0 border-main-theme-color ease duration-300 transition hover:text-main-theme-color hover:border-b-3 hover:border-main-theme-color" href="#our-app">Our App</a></li>
+          <li><a class="pb-1.5 border-b-0 border-main-theme-color ease duration-300 transition hover:text-main-theme-color hover:border-b-3 hover:border-main-theme-color" href="#contact">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="hidden md:flex items-center">
+        <button class="pr-2 cursor-pointer">Log in</button>
+        <button
+          class="bg-main-theme-color px-4 py-2 rounded-[10px] text-white cursor-pointer ease duration-200 transition hover:bg-darken-main-theme-color"
+        >
+          Sign up
+        </button>
+      </div>
+      <button class="text-2xl text-main-theme-color cursor-pointer md:hidden">☰</button>
+    </header>
+    <!-- Header part ends -->
+
+    <main class="w-full max-w-350 mt-16 mx-auto">
+      <!-- Hero Section Starts -->
+      <section id="about" class="mx-auto flex flex-col justify-center items-center lg:flex-row-reverse lg:items-center">
+
+
+          <!-- Right Side -->
+        <div class="w-full relative flex justify-end items-center">
+
+          <!-- Model -->
+          <img
+          class="max-w-[80%] md:w-full"
+            src="./assets/images/hero section image.png"
+            alt="A joyful guy texting in his phone"
+          />
+
+          <!-- Arrow -->
+          <img class="w-30 h-30 absolute top-8 right-5 -z-1 md:w-40 md:h-40 md:top-20 md:right-20" src="./assets/icons/hero section arrow.svg" alt="Rotating arrow">
+
+          <!-- Light Bulb -->
+          <img class="w-30 h-30 absolute top-20 left-14 -z-1 md:w-50 md:h-50 md:top-40 md:left-35 lg:left-30" src="./assets/icons/Light Bulb.svg" alt="Bulb icon">
+          
+          <!-- Top text card -->
+          <div
+            class="p-2 pr-10 absolute top-2 left-5 -z-1 rounded-xl bg-white shadow-xl flex items-center gap-2 md:top-15 md:left-40"
+          >
+            <img class="w-5 h-5 md:w-10 md:h-10" src="./assets/icons/Activity.svg" alt="Activity icon">
+            <div>
+              <p class="text-xs font-[Abel] md:text-[14px]">100% Business Growth</p>
+              <div class="mt-1 flex items-center gap-2">
+                <img class="w-2 h-2 md:w-4 md:h-4" src="./assets/icons/Yellow Star.svg" alt="Rating icon">
+                <p class="text-[10px] font-[Abel] md:text-xs">4.9</p>
+                <p class="text-[10px] text-[#8A898E] font-medium md:text-xs">(1520 Reviews)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom text card -->
+          <div
+            class="p-2 pr-20 absolute bottom-25 -left-2 -z-1 rounded-xl bg-white shadow-xl flex items-center gap-2 md:bottom-55 md:left-25 lg:left-15"
+          >
+            <div>
+              <p class="text-xs font-[Abel] md:text-[14px]">1000,000 Happy Clients</p>
+              <div class="mt-1 flex items-center gap-2">
+                <img class="w-2 h-2 md:w-4 md:h-4" src="./assets/icons/Yellow Star.svg" alt="Rating icon">
+                <p class="text-[10px] font-[Abel] md:text-xs">4.9</p>
+                <p class="text-[10px] text-[#8A898E] font-medium md:text-xs">(15k Reviews)</p>
+              </div>
+            </div>
+          </div>
+        </div>    
+        
+        <!-- Left Side -->
+        <div class="-mt-5 w-full flex flex-col items-center gap-8 text-center lg:-mt-10 lg:text-left lg:items-start">
+          <h1 class="text-[50px] leading-18 text-hero-heading-color font-black lg:text-[70px] lg:leading-20.25">
+            We boost <br />growth for your startup business
+          </h1>
+          <p class="text-[16px] leading-7 font-medium lg:text-[22px]">
+            Our goal is top at the heart of creativity services <br />industry
+            as a digital creator. In has a after <br />comment
+          </p>
+          <div class="flex gap-5 items-center">
+            <button
+              class="bg-main-theme-color px-6 py-2 rounded-[10px] text-white text-base font-medium cursor-pointer ease duration-200 transition hover:bg-darken-main-theme-color"
+            >
+              Get Started
+            </button>
+            <img class="w-10 h-10 lg:w-15 lg:h-15" src="./assets/icons/Learn More.svg" alt="Play icon">
+
+            <button class="text-[18px] font-[Abel] cursor-pointer">
+              Learn More
+            </button>
+          </div>
+        </div>
+          
+      </section>
+      <!-- Hero Section ends -->
+
+      <!-- Service Section Starts -->
+      <section id="our-app" class="w-full mt-16 mx-auto text-center font-[Abel] lg:mt-0">
+        <p class="uppercase text-[14px] text-[#8A898E] tracking-[45%]">service</p>
+        <h2 class="text-[40px] lg:text-[52px]">Our Vision & Our Goal</h2>
+        <div class="max-w-300 mx-auto grid grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Card -->
+          <div class="max-w-80 bg-white rounded-[28px] mt-16 mx-auto px-5 py-5 shadow-xl flex flex-col justify-evenly items-center gap-3.5">
+            <img class="w-19 h-19" src="./assets/icons/Activity.svg" alt="Activity icon">
+            <h3 class="text-4xl">Graphic Design</h3>
+            <p class="font-[Poppins] text-[18px] leading-[28.5px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet dolor nec imperdiet.</p>
+            <button class="bg-main-theme-color px-4 py-2 rounded-[10px] text-white cursor-pointer font-[Poppins] ease duration-200 transition hover:bg-darken-main-theme-color">Learn More</button>
+          </div>
+
+          <!-- Card -->
+          <div class="max-w-80 bg-white rounded-[28px] mt-16 mx-auto px-5 py-5 shadow-xl flex flex-col justify-evenly items-center gap-3.5">
+            <img class="w-19 h-19" src="./assets/icons/Video.svg" alt="Video icon">
+            <h3 class="text-4xl">Video Editing</h3>
+            <p class="font-[Poppins] text-[18px] leading-[28.5px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet dolor nec imperdiet.</p>
+            <button class="bg-main-theme-color px-4 py-2 rounded-[10px] text-white cursor-pointer font-[Poppins] ease duration-200 transition hover:bg-darken-main-theme-color">Learn More</button>
+          </div>
+
+          <!-- Card -->
+          <div class="max-w-80 bg-white rounded-[28px] mt-16 mx-auto px-5 py-5 shadow-xl flex flex-col justify-evenly items-center gap-3.5">
+            <img class="w-19 h-19" src="./assets/icons/Chart.svg" alt="Chart icon">
+            <h3 class="text-4xl">Digital Marketing</h3>
+            <p class="font-[Poppins] text-[18px] leading-[28.5px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus laoreet dolor nec imperdiet.</p>
+            <button class="bg-main-theme-color px-4 py-2 rounded-[10px] text-white cursor-pointer font-[Poppins] ease duration-200 transition hover:bg-darken-main-theme-color">Learn More</button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Service Section Ends -->
+
+      <!-- Framework -->
+      <section class="mt-16 mx-auto flex flex-col justify-center items-center lg:flex-row-reverse lg:items-center lg:justify-between">
+        <!-- Right Side -->
+        <img src="./assets/images/blocks components.svg" alt="An illustration">
+
+        <!-- Left Side -->
+        <div class="mt-5 lg:mt-0 font-[DM_Sans] text-center lg:text-left lg:h-full lg:flex lg:flex-col lg:justify-between lg:gap-40">
+          <div class="lg:flex lg:flex-col lg:gap-10">
+            <h3 class="text-[#1E0E62] text-[22px] font-medium">Many Blocks and <br> Components</h3>
+            <p class="text-[#15143966] text-base leading-6.5">Startup Framework contains components <br> and complex blocks which can easily be <br> integrated into almost any design.</p>
+          </div>
+
+          <div>
+            <button class="mt-5 border-2 border-[#EBEAED] rounded-full px-5 py-1 text-[#1E0E62] text-base font-medium cursor-pointer ease duration-200 transition-all hover:bg-[#1E0E62] hover:text-white">Explore</button>
+          </div>
+
+        </div>
+      </section>
+      <!-- Framework ends -->
+      
+      <!-- Testimonial Starts -->
+      <section class="w-full mt-16 mx-auto font-[DM_Sans]">
+        <p class="uppercase text-[14px] text-[#8A898E] text-center tracking-[45%] font-[Abel]">testimonials</p>
+        <h2 class="text-[40px] text-center font-[Abel] lg:text-[52px] ">What Clients say about us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          
+          <!-- card -->
+          <div class="max-w-115 mt-15 mx-auto p-5 flex items-start gap-7">
+            <img class="w-17.5 h-17.5 rounded-[10px]" src="./assets/images/1.jpg" alt="A guy">
+            <div class="flex flex-col justify-between items-start gap-2">
+              <p class="text-[18px] text-hero-heading-color leading-6 font-medium">Get a fully retina ready site when you build with Startup Framework. Websites look sharper and more gorgeous on devices with retina display support</p>
+              <p class="text-[14px] text-[#15143966] leading-6.5 font-bold">RAYHAN CURRAN</p>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="max-w-115 mt-15 mx-auto p-5 flex items-start gap-7">
+            <img class="w-17.5 h-17.5 rounded-[10px]" src="./assets/images/2.jpg" alt="A guy">
+            <div class="flex flex-col justify-between items-start gap-2">
+              <p class="text-[18px] text-hero-heading-color leading-6 font-medium">As a business targeting high net worth individuals, we were looking for a slick, cool and mini-malistic design for our website</p>
+              <p class="text-[14px] text-[#15143966] leading-6.5 font-bold">Kayley Frame</p>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="max-w-115 mt-15 mx-auto p-5 flex items-start gap-7">
+            <img class="w-17.5 h-17.5 rounded-[10px]" src="./assets/images/3.jpg" alt="A guy">
+            <div class="flex flex-col justify-between items-start gap-2">
+              <p class="text-[18px] text-hero-heading-color leading-6 font-medium">The most important part of the Startup Framework is the samples</p>
+              <p class="text-[14px] text-[#15143966] leading-6.5 font-bold">Gene Whitfield</p>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="max-w-115 mt-15 mx-auto p-5 flex items-start gap-7">
+            <img class="w-17.5 h-17.5 rounded-[10px]" src="./assets/images/4.jpg" alt="A guy">
+            <div class="flex flex-col justify-between items-start gap-2">
+              <p class="text-[18px] text-hero-heading-color leading-6 font-medium">I’ve built my website with Startup just in one day, and it was ready-to-go.</p>
+              <p class="text-[14px] text-[#15143966] leading-6.5 font-bold">Allan Kim</p>
+            </div>
+          </div>
+        </div>  
+      </section>
+      <!-- Testimonial ends -->
+
+      <!-- Team Starts -->
+      <section class="w-full mt-16 mx-auto font-[DM_Sans]">
+        <p class="uppercase text-[14px] text-[#8A898E] text-center tracking-[45%] font-[Abel]">our team</p>
+        <h2 class="text-[40px] text-center font-[Abel] lg:text-[52px] ">Meet The Team</h2>
+
+        <!-- Grid Container -->
+        <div class="max-w-250 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+          <!-- card -->
+          <div class="w-70 mt-5 mx-auto rounded-[10px] flex flex-col justify-between items-center border-2 border-[#EBEAED]">
+            <div class="p-10 flex flex-col justify-around items-center gap-3">
+              <img class="rounded-full w-30" src="./assets/images/team member 1.jpg" alt="A guy">
+              <h5 class="text-[22px] text-[#1E0E62] font-medium">Vanessa Laird</h5>
+              <p class="text-[14px] text-[#15143966] font-bold">UI Designer</p>
+            </div>
+
+            <div class="w-full border-t-2 border-[#EBEAED] flex justify-evenly items-center">
+              <a class="p-2 flex flex-1 justify-center items-center border-r-2 border-[#EBEAED]" href="#"><img class="w-10 h-10" src="./assets/icons/twitter.svg" alt="Twitter icon"></a>
+              <a class="p-2 flex flex-1 justify-center items-center border-r-2 border-[#EBEAED]" href="#"><img class="w-10 h-10" src="./assets/icons/facebook.svg" alt="Facebook icon"></a>
+              <a class="p-2 flex flex-1 justify-center items-center" href="#"><img class="w-10 h-10" src="./assets/icons/dribbble.svg" alt="Dribbble icon"></a>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="w-70 mt-5 mx-auto rounded-[10px] flex flex-col justify-between items-center border-2 border-[#EBEAED]">
+            <div class="p-10 flex flex-col justify-around items-center gap-3">
+              <img class="rounded-full w-30" src="./assets/images/team member 2.jpg" alt="A guy">
+              <h5 class="text-[22px] text-[#1E0E62] font-medium">Mason Campbell</h5>
+              <p class="text-[14px] text-[#15143966] font-bold">UI Designer</p>
+            </div>
+
+            <div class="w-full border-t-2 border-[#EBEAED] flex justify-evenly items-center">
+              <a class="p-2 flex flex-1 justify-center items-center border-r-2 border-[#EBEAED]" href="#"><img class="w-10 h-10" src="./assets/icons/twitter.svg" alt="Twitter icon"></a>
+              <a class="p-2 flex flex-1 justify-center items-center border-r-2 border-[#EBEAED]" href="#"><img class="w-10 h-10" src="./assets/icons/facebook.svg" alt="Facebook icon"></a>
+              <a class="p-2 flex flex-1 justify-center items-center" href="#"><img class="w-10 h-10" src="./assets/icons/dribbble.svg" alt="Dribbble icon"></a>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="w-70 mt-5 mx-auto rounded-[10px] flex flex-col justify-between items-center border-2 border-[#EBEAED]">
+            <div class="p-10 flex flex-col justify-around items-center gap-3">
+              <img class="rounded-full w-30" src="./assets/images/team member 3.jpg" alt="A guy">
+              <h5 class="text-[22px] text-[#1E0E62] font-medium">Irea Evans</h5>
+              <p class="text-[14px] text-[#15143966] font-bold">CLIENT MANAGER</p>
+            </div>
+
+            <div class="w-full border-t-2 border-[#EBEAED] flex justify-evenly items-center">
+              <a class="p-2 flex flex-1 justify-center items-center border-r-2 border-[#EBEAED]" href="#"><img class="w-10 h-10" src="./assets/icons/twitter.svg" alt="Twitter icon"></a>
+              <a class="p-2 flex flex-1 justify-center items-center border-r-2 border-[#EBEAED]" href="#"><img class="w-10 h-10" src="./assets/icons/facebook.svg" alt="Facebook icon"></a>
+              <a class="p-2 flex flex-1 justify-center items-center" href="#"><img class="w-10 h-10" src="./assets/icons/dribbble.svg" alt="Dribbble icon"></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- Team Ends -->
+      
+      <!-- Subscription Starts -->
+      <section id="contact" class="w-full mt-16 mx-auto font-[Roboto]">
+        <p class="uppercase text-[14px] text-[#8A898E] text-center tracking-[45%] font-[Abel]">our team</p>
+        <h2 class="text-[40px] text-center font-[Abel] lg:text-[52px] ">Subscribe our Newsletter</h2>
+        <div class="mt-5 mx-auto flex flex-col justify-evenly items-center lg:flex-row">
+          <div>
+          <img src="./assets/icons/Envelope.svg" alt="Envelope icon">
+        </div>
+        <div class="flex flex-col justify-between items-center gap-10">
+          <p class="text-[18px] leading-[28.5px] text-center lg:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <form class="w-full flex flex-col justify-between items-center gap-10" action="#">
+            <input class="w-full bg-white p-3 pl-10 border border-[#EBEAED] rounded-full shadow-xl placeholder:text-black placeholder:text-[20px]" type="email" name="email" id="email" placeholder="Your E-mail here...">
+            <button class="w-full bg-main-theme-color px-4 py-2 rounded-[10px] text-white cursor-pointer font-[Poppins] ease duration-200 transition hover:bg-darken-main-theme-color" type="submit">Subscribe Our Newsletter</button>
+          </form>
+        </div>
+        </div>
+      </section>
+      <!-- Subscription Ends -->
+    </main>
+
+    <footer class="w-full max-w-350 mt-10 mx-auto font-[DM_Sans] lg:mt-16">
+      <div class="border-b-2 border-[#EBEAED] pb-2 flex flex-col-reverse justify-between items-center gap-5 lg:pb-5 lg:flex-row lg:gap-0">
+        <div class="flex justify-between items-center gap-5 lg:gap-40">
+        <img class="w-25" src="./assets/images/logo.png" alt="Brand logo">
+        <p class="text-base text-[#1E0E62]">&copy; 2020 Epixelab. All rights reserved.</p>
+      </div>
+
+      <div>
+        <ul class="text-base text-[#1E0E62] flex justify-between items-center gap-5 md:gap-10">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+      </div>
+      <p class="mt-1 text-base text-[#15143966] text-center lg:text-left lg:mt-3">Startup Framework contains components and complex blocks which can easily be integrated into almost any design. </p>
+    </footer>
+  </body>
+</html>
