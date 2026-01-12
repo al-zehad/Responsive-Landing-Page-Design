@@ -23,7 +23,7 @@ This project is a **responsive landing page design** created using raw HTML and 
 
 ### Links
 
-- Live Site URL: [Responsive Landing Page](https://landing-page-ostad-az.netlify.app/)
+- Live Site URL: [Responsive Landing Page](https://landing-page-ostad-f2oxk5op4-al-zehads-projects.vercel.app/)
 - GitHub Repo: [Responsive Landing Page Repository](https://github.com/al-zehad/Responsive-Landing-Page-Design)
 
 ---
